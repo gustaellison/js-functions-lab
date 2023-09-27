@@ -139,7 +139,7 @@ function multiplyArray (arr) {
 }
 console.log(multiplyArray([10, 10, 8]))
 
-// 6 Define a function, as a function expression, numArgs 
+// 6. Define a function, as a function expression, numArgs 
 //that returns the number of arguments passed to the function when called.
 let numArgs = function(...arguments) {
     return arguments.length;
@@ -155,7 +155,25 @@ console.log(numArgs(4, 6, 7, 7))
 // 7. Define a function, as a function declaration, reverseString that takes a string, 
 // reverses the characters, and returns it. For example, reverseString('rockstar'); 
 // would return the string "ratskcor".
+function reverseString(string) {
+    return string.split('').reverse().join('')
+} 
+console.log(reverseString("hello hows it going"))
 
+// 8. Define a function, as a function expression, longestStringInArray that takes 
+//an array of strings as an argument and returns the length of the longest string
+
+let longestStringInArray = function(listOfWords){
+    let longestWord = ''
+    for (let i = 0; i < listOfWords.length - 1; i++){
+        if (longestWord.length < listOfWords[i].length){
+           longestWord = listOfWords[i]
+        }
+    }
+    return longestWord.length
+    
+}
+console.log(longestStringInArray(['pizza', 'pie', 'enchilladas','juice']))
 
 // 9.
 /* Define a function, as a function declaration, stringsLongerThan 
@@ -163,11 +181,11 @@ that takes an array of strings and a number as arguments; and returns an
 array of the strings that are longer than the number passed in. For example, 
 stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return 
 ["hello", "morning"].
-*/
+ */
 
 function stringsLongerThan(strArray, num){
     for (let i = 0; i < strArray.length - 1; i++){
-    
+    for (let i = 0; i < arr.length - 1; i++)
 }    
 }
 
