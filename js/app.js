@@ -141,8 +141,20 @@ console.log(multiplyArray([10, 10, 8]))
 
 // 6 Define a function, as a function expression, numArgs 
 //that returns the number of arguments passed to the function when called.
-let numArgs = function()
+let numArgs = function(...arguments) {
+    return arguments.length;
+//   let total = 0
+//     for (let i = 0; i < arguments.length - 1; i++){
+//      arguments[i]
+//     }
 
+}
+
+console.log(numArgs(4, 6, 7, 7))
+
+// 7. Define a function, as a function declaration, reverseString that takes a string, 
+// reverses the characters, and returns it. For example, reverseString('rockstar'); 
+// would return the string "ratskcor".
 
 
 // 9.
