@@ -86,6 +86,18 @@ function isCharAVowel(letter) {
         return 'it is not a vowel'
             }
 }
-    
 
-console.log(isCharAVowel('a'))
+let testLetter = "b"
+
+console.log(isCharAVowel(testLetter))
+
+// 4. 
+
+const arr = [3, 4, 6, 10]
+let total = 0
+
+ arr.forEach(function (nums) {
+    total = total + nums
+ })
+ console.log(total)
+
