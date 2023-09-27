@@ -165,7 +165,7 @@ console.log(reverseString("hello hows it going"))
 
 let longestStringInArray = function(listOfWords){
     let longestWord = ''
-    for (let i = 0; i < listOfWords.length - 1; i++){
+    for (let i = 0; i < listOfWords.length; i++){
         if (longestWord.length < listOfWords[i].length){
            longestWord = listOfWords[i]
         }
@@ -173,7 +173,7 @@ let longestStringInArray = function(listOfWords){
     return longestWord.length
     
 }
-console.log(longestStringInArray(['pizza', 'pie', 'enchilladas','juice']))
+console.log(longestStringInArray(['pizza', 'pie', 'enchilladas','juisfdgsdhsdhce']))
 
 // 9.
 /* Define a function, as a function declaration, stringsLongerThan 
@@ -181,11 +181,17 @@ that takes an array of strings and a number as arguments; and returns an
 array of the strings that are longer than the number passed in. For example, 
 stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return 
 ["hello", "morning"].
- */
+*/
 
-function stringsLongerThan(strArray, num){
-    for (let i = 0; i < strArray.length - 1; i++){
-    for (let i = 0; i < arr.length - 1; i++)
-}    
+function stringsLongerThan(strArray, number){
+    let allLongerWords = []
+    for (let i = 0; i <= strArray.length - 1; i++){
+        //console.log('current el', strArray[i])
+        if (strArray[i].length > number){
+            allLongerWords.push(strArray[i])
+        }
+    }  
+    return allLongerWords  
 }
-
+console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
+//console.log('hello world')
