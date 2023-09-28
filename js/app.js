@@ -195,3 +195,10 @@ function stringsLongerThan(strArray, number){
 }
 console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
 //console.log('hello world')
+
+// Second option for 9
+// arrOfStrings.forEach(function(str){
+//     if (str.length > num){
+//         arr.push(str)
+//     }
+// })
